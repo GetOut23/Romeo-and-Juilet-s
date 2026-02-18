@@ -1,0 +1,938 @@
+<!--Full Code of Making A Responsive Resturant-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R&J's Resturant</title>
+
+    <!--Favicon icon--> 
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!--Google Font 1--> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!--Google Font 2-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <!--Google Font 3-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!--Google Font 4-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <!--Google Font 5-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AT:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css"> 
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="R&J.css">
+    
+
+</head>
+<body id="home">
+    <!--Navigation Center-->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar" style="background-color: #8B0000;">
+        <div class="container">
+      
+          <a class="navbar-brand fw-bold text-black" href="#" >R&J's Restaurant</a>
+      
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+      
+              <li class="nav-item">
+                <a class="nav-link text-black" href="R&J.html">Home</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link text-black" href="about.html">About</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link text-black" href="service.html">Service</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link text-black" href="menu.html">Menu</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">Pages</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <a href="" class="btn btn-primary py-2 px-3" style="background-color: #8B0000; color: goldenrod; border-color: #8B0000;">Book A Table</a>
+      
+        </div>
+      </nav>
+
+    <!--Hero Section-->
+    <section class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 text-gold">
+                    <h1 clas="display-4 fw-bold animated sliderInLeft" style="font-size: 75px;">Enjoy Our<br>Delicious Meal</h1>
+                    <p class="animated sliderInLeft mt-3" style="font-family: 'Lexend', serif; color: whitesmoke;">Enjoy our delicious meal, thoughtfully prepared with the finest ingredients and traditional Italian craftsmanship, where every bite brings the warmth of Italy and the luxury of a truly refined dining experience.Insert Text here</p>
+                    <a href="#" class="btn btn-warning mt-3 px-4 py-2 sliderInLeft">Book A Table</a>
+                </div>
+
+                <div class="col-lg-6 text-center">
+                    <img src="Italian Antipasto Platter.jpg" class="img-fluid rounded-circle food-img">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: whitesmoke;">
+      <section class="py-5">
+  <div class="container">
+    <div class="row text-center">
+
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="p-4 shadow rounded feature-box">
+          <i class="bi bi-person-fill fs-1 text-warning"></i>
+          <h5 class="mt-3">Master Chefs</h5>
+          <p>High Class chefs delivering top quality meals.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="p-4 shadow rounded feature-box">
+          <i class="bi bi-cup-hot-fill fs-1 text-warning"></i>
+          <h5 class="mt-3">Quality Food</h5>
+          <p>Fresh ingredients and premium taste.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="p-4 shadow rounded feature-box">
+          <i class="bi bi-cart-fill fs-1 text-warning"></i>
+          <h5 class="mt-3">Online Order</h5>
+          <p>Order easily from anywhere anytime.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="600">
+        <div class="p-4 shadow rounded feature-box">
+          <i class="bi bi-headset fs-1 text-warning"></i>
+          <h5 class="mt-3">24/7 Service</h5>
+          <p>We are always here for you.<br>Anywhere Anytime</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <section>
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+
+        <!-- LEFT SIDE IMAGES -->
+        <div class="col-lg-6">
+          <div class="row g-3">
+            <div class="col-6">
+              <img class="img-fluid about-img " src="MENUS _ Tessa Restaurant NYC.jpg">
+            </div>
+            <div class="col-6">
+              <img class="img-fluid about-img" src="Creative Concepts for Restaurant Design Success….jpg">
+            </div>
+            <div class="col-6">
+              <img class="img-fluid about-img" src="fork &knife.jpg">
+            </div>
+            <div class="col-6">
+              <img class="img-fluid about-img" src="17 Provence Recipes to Cook Like You're in the….jpg">
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE TEXT -->
+        <div class="col-lg-6 d-flex align-items-center" style="background-color: whitesmoke;" >
+          <div >
+            <section id="about"><h4 class="mb-2">About Us:-</h4></section>
+            <h2 class="mb-3">Welcome to R&J's Restaurant</h2>
+            <p class="mb-4"style="font-family: 'Lexend', serif;">R&J’s Restaurant brings the essence of Italy to your table. We blend authentic flavors with elegant presentation, offering a refined dining experience where every dish is crafted with passion and every visit feels unforgettable.</p>
+
+            <div class="row g-4">
+
+              <div class="col-6">
+                <div class="d-flex align-items-center experience-box">
+                  <h1 class="fw-bold me-3 counter" data-target="20" style="color: #8B0000;">8</h1>
+                  <div>
+                    <small>Years of</small>
+                    <h6 class="fw-bold mb-0">EXPERIENCE</h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="d-flex align-items-center experience-box">
+                  <h1 class="fw-bold me-3 counter" data-target="50" style="color: #8B0000;">15</h1>
+                  <div>
+                    <small>Popular</small>
+                    <h6 class="fw-bold mb-0">MASTER CHEFS</h6>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <a href="" class="btn btn-primary py-3 px-5 mt-2" style="background-color: #8B0000; color: goldenrod; border-color: #8B0000;">
+                Read More
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="text-center wow fadeInup mb-5">
+
+    <h5 class="text-warning mb-2" style="font-family: 'Playwrite AT',serif;">-----Food Menu-----</h5>
+    <h2 class="fw-bold" style="color: #8B0000; font-family: 'Lexend', serif;">Most Popular Items</h2>
+
+    <div class="menu-tabs d-flex justify-content-center wow fadeInup mt-4">
+
+        <div class="tab-item active" data-filter="breakfast">
+            <i class="bi bi-cup-hot-fill"></i>
+            <div>
+                <small style="font-family: 'Lexend', serif;">Popular</small>
+                <h6 style="font-family: 'Lexend', serif;">Breakfast</h6>
+            </div>
+        </div>
+
+        <div class="tab-item" data-filter="lunch">
+            <i class="bi bi-egg-fried"></i>
+            <div>
+                <small style="font-family: 'Lexend', serif;">Special</small>
+                <h6 style="font-family: 'Lexend', serif;">Lunch</h6>
+            </div>
+        </div>
+
+        <div class="tab-item" data-filter="dinner" style="background-color: whitesmoke;">
+            <i class="bi bi-cup-straw fs-1"></i>
+            <div>
+                <small style="font-family: 'Lexend', serif;">Lovely</small>
+                <h6 style="font-family: 'Lexend', serif;">Dinner</h6>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="row g-4" style="background-color: whitesmoke;">
+
+    <div class="col-md-6 menu-item breakfast">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">Flaky Cornetto (Italian croissant)</h5>
+                    <span class="text-warning fw-bold">$14.75</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item breakfast">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0"> Fette Biscottate (rusks with jam/Nutella)</h5>
+                    <span class="text-warning fw-bold">$89.20</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item breakfast">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">Caffè e Cappuccino</h5>
+                    <span class="text-warning fw-bold">$3.99</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item breakfast">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">Brioche con granita (Sicily)</h5>
+                    <span class="text-warning fw-bold">$57.60</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item breakfast">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">Maritozzo (Lazio)</h5>
+                    <span class="text-warning fw-bold">$120.45</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item breakfast">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">Savoiardi (Sardinia)</h5>
+                    <span class="text-warning fw-bold">$42.10</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item breakfast">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">Pasticciotto (Puglia)</h5>
+                    <span class="text-warning fw-bold">$215.30</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item breakfast">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">Latte macchiato</h5>
+                    <span class="text-warning fw-bold">$9.50</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item breakfast">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">Caffè lungo</h5>
+                    <span class="text-warning fw-bold">$6.80</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item breakfast">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">Pastries with buttercream</h5>
+                    <span class="text-warning fw-bold">$77.25</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item lunch">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">a primo (pasta/risotto)</h5>
+                    <span class="text-warning fw-bold">$14.75</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item lunch">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">rice balls (Arancini)</h5>
+                    <span class="text-warning fw-bold">$14.75</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item lunch">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">sandwiches</h5>
+                    <span class="text-warning fw-bold">$14.75</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item lunch">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">Ribollita (Tuscan bread soup)</h5>
+                    <span class="text-warning fw-bold">$14.75</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item lunch">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">Chicken Vesuvio</h5>
+                    <span class="text-warning fw-bold">$14.75</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item lunch">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">Gnocchi Asparagi e Pancetta (Tuscan Gnocchi with Asparagus and Pancetta)</h5>
+                    <span class="text-warning fw-bold">$14.75</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item lunch">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">Agnolotti del Plin</h5>
+                    <span class="text-warning fw-bold">$14.75</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item lunch">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">Pork Chop Milanese</h5>
+                    <span class="text-warning fw-bold">$14.75</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item lunch">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">Baked Stuffed Eggplant with Italian Sausage</h5>
+                    <span class="text-warning fw-bold">$14.75</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item lunch">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">Tuna Steaks with Lemon Caper Sauce</h5>
+                    <span class="text-warning fw-bold">$14.75</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item dinner">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">Stracotto di Fassona Piemontese</h5>
+                    <span class="text-warning fw-bold">$14.75</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item dinner">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">Italian Wedding Risotto</h5>
+                    <span class="text-warning fw-bold">$14.75</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item dinner">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">Porchetta</h5>
+                    <span class="text-warning fw-bold">$14.75</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item dinner">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">Grandma's Lasagna</h5>
+                    <span class="text-warning fw-bold">$14.75</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item dinner">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">Skirt Steak Saltimbocca</h5>
+                    <span class="text-warning fw-bold">$14.75</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item dinner">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">Zucchini Risotto with Shrimp</h5>
+                    <span class="text-warning fw-bold">$14.75</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item dinner">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">Chicken Scarpariello</h5>
+                    <span class="text-warning fw-bold">$14.75</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item dinner">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">Pasta ’Ncasciata (Sicilian Baked Pasta)</h5>
+                    <span class="text-warning fw-bold">$14.75</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item dinner">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">Florentine Butter Chicken</h5>
+                    <span class="text-warning fw-bold">$14.75</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 menu-item dinner">
+        <div class="d-flex align-items-center">
+            <img src="" class="img-fluid rounded" style="width:80px;">
+            <div class="ms-3 w-100">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-0">Osso Buco with Red Wine</h5>
+                    <span class="text-warning fw-bold">$14.75</span>
+                </div>
+                <small class="text-muted">Ipsum ipsum clita erat amet dolor justo diam</small>
+            </div>
+        </div>
+    </div>
+
+</div>
+</section>
+<section class="container-xxl py-5 px-0 wow fadeInup">
+  <div class="row g-0">
+        <div class="col-md-6 video-column d-flex align-items-center justify-content-center">
+            <div class="play-btn">
+                <button></button>
+                <i class="fas fa-play"></i>
+            </div>
+        </div>
+
+        <div class="col-md-6 form-column p-5">
+            <div class="form-container">
+                <h6 class="text-warning fw-bold mb-1" style="font-family: 'Playwrite AT',serif;">Reservation ———</h6>
+                <h1 class="mb-4" style="color: #8B0000;">Book A Table Online</h1>
+                
+                <form id="reservationForm">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control custom-input" placeholder="Your Name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control custom-input" placeholder="Your Email" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="datetime-local" class="form-control custom-input" required>
+                        </div>
+                        <div class="col-md-6">
+                            <select class="form-select custom-input">
+                                <option value="1">People 1</option>
+                                <option value="2">People 2</option>
+                                <option value="3">People 3</option>
+                                <option value="4+">People 4+</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control custom-input" rows="4" placeholder="Special Request"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-warning w-100 fw-bold py-3 text-white">BOOK NOW</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="team-section py-5"> 
+  <div class="container text-center wow fadeInup">
+
+    <h6 class="text-warning fw-bold">——— Team Members ———</h6>
+    <h1 class="mb-5" style="color: #8B0000;">Our Master Chefs</h1>
+        
+    <!-- ONLY ONE ROW -->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+      <!-- Chef 1 -->
+      <div class="col">
+        <div class="chef-card shadow-sm p-4 wow fadeInup">
+          <div class="image-wrapper mb-3">
+            <img src="pic1.jpg" alt="Chef" class="img-fluid rounded-circle" style="height: 290px; width: 1600px;">
+          </div>
+          <h5>Full Name</h5>
+          <p class="text-muted">Designation</p>
+          <div class="d-flex justify-content-center mt-3">
+            <a class="btn btn-square btn-primary mx-1" href="" style=" background-color: #8B0000; border-color: #8B0000;"><i class="fab fa-facebook" style="color: goldenrod;"></i></a>
+            <a class="btn btn-square btn-primary mx-1" href="" style=" background-color: #8B0000; border-color: #8B0000;"><i class="fab fa-twitter" style="color: goldenrod;"></i></a>
+            <a class="btn btn-square btn-primary mx-1" href="" style=" background-color: #8B0000; border-color: #8B0000;"><i class="fab fa-instagram" style="color: goldenrod;"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chef 2 -->
+      <div class="col">
+        <div class="chef-card shadow-sm p-4">
+          <div class="image-wrapper mb-3">
+            <img src="pic2.jpg" alt="Chef" class="img-fluid rounded-circle" style="height: 290px; width: 1600px;">
+          </div>
+          <h5>Full Name</h5>
+          <p class="text-muted">Designation</p>
+          <div class="d-flex justify-content-center mt-3">
+            <a class="btn btn-square btn-primary mx-1" href="" style=" background-color: #8B0000; border-color: #8B0000;"><i class="fab fa-facebook" style="color: goldenrod;"></i></a>
+            <a class="btn btn-square btn-primary mx-1" href="" style=" background-color: #8B0000; border-color: #8B0000;"><i class="fab fa-twitter" style="color: goldenrod;"></i></a>
+            <a class="btn btn-square btn-primary mx-1" href="" style=" background-color: #8B0000; border-color: #8B0000;"><i class="fab fa-instagram" style="color: goldenrod;"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chef 3 -->
+      <div class="col">
+        <div class="chef-card shadow-sm p-4">
+          <div class="image-wrapper mb-3">
+            <img src="pic3.jpg" alt="Chef" class="img-fluid rounded-circle" style="height: 290px; width: 1600px;">
+          </div>
+          <h5>Full Name</h5>
+          <p class="text-muted">Designation</p>
+          <div class="d-flex justify-content-center mt-3">
+            <a class="btn btn-square btn-primary mx-1" href="" style=" background-color: #8B0000; border-color: #8B0000;"><i class="fab fa-facebook" style="color: goldenrod;"></i></a>
+            <a class="btn btn-square btn-primary mx-1" href="" style=" background-color: #8B0000; border-color: #8B0000;"><i class="fab fa-twitter" style="color: goldenrod;"></i></a>
+            <a class="btn btn-square btn-primary mx-1" href="" style=" background-color: #8B0000; border-color: #8B0000;"><i class="fab fa-instagram" style="color: goldenrod;"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chef 4 -->
+      <div class="col">
+        <div class="chef-card shadow-sm p-4">
+          <div class="image-wrapper mb-3">
+            <img src="pic4.jpg" alt="Chef" class="img-fluid rounded-circle" style="height: 290px; width: 1600px;">
+          </div>
+          <h5>Full Name</h5>
+          <p class="text-muted">Designation</p>
+          <div class="d-flex justify-content-center mt-3" >
+            <a class="btn btn-square btn-primary mx-1 " style=" background-color: #8B0000; border-color: #8B0000;" href=""><i class="fab fa-facebook" style="color: goldenrod;" ></i></a>
+            <a class="btn btn-square btn-primary mx-1" href="" style=" background-color: #8B0000; border-color: #8B0000;"><i class="fab fa-twitter" style="color: goldenrod;"></i></a>
+            <a class="btn btn-square btn-primary mx-1" href="" style=" background-color: #8B0000; border-color: #8B0000;"><i class="fab fa-instagram" style="color: goldenrod;"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section style="font-family: 'Playwrite AT', serif;">
+    <footer class="footer-section text-light pt-5 pb-3">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- Company -->
+      <div class="col-lg-3 col-md-6" id="contact">
+        <h5 class="footer-title">Company-----</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Reservation</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Condition</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">Contact-----</h5>
+        <p>📍 4003, Ilishan-Remo, Ogun State</p>
+        <p>📞 +234 802 318 600</p>
+        <p>✉ R&J's@gmail.com</p>
+        <div class="d-flex pt-2">
+            <a href="" class="btn btn-outline-light btn-social"><i class="fab fa-twitter"></i></a>
+            <a href="" class="btn btn-outline-light btn-social"><i class="fab fa-facebook"></i></a>
+            <a href="" class="btn btn-outline-light btn-social"><i class="fab fa-youtube"></i></a>
+            <a href="" class="btn btn-outline-light btn-social"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <!-- Opening -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">Opening-----</h5>
+        <p>Monday - Saturday</p>
+        <p>09AM - 09PM</p>
+        <p>Sunday</p>
+        <p>10AM - 08PM</p>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">|Newsletter|</h5>
+        <p>Subscribe to our newsletter to receive updates on special offers, new menu launches, and upcoming events.</p>
+        <div class="input-group">
+          <input type="email" class="form-control" placeholder="Your email">
+          <button class="btn btn-danger">SignUp</button>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="mt-4">
+
+    <div class="text-center">
+      <p class="mb-0">© Romeo & Juliet's Restaurant, All Rights Reserved</p>
+    </div>
+
+  </div>
+</footer>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+
+    </section>
+    
+    <!--Bootstrap JS-->
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    </script>
+
+<script>
+const counters = document.querySelectorAll('.counter');
+
+const startCounting = (counter) => {
+    const target = +counter.getAttribute('data-target');
+    const duration = 3000; // total animation time in milliseconds (3 seconds)
+    const stepTime = 50;   // how often it updates (bigger = slower)
+    const steps = duration / stepTime;
+    const increment = target / steps;
+
+    let count = 0;
+
+    const updateCount = () => {
+        count += increment;
+
+        if (count < target) {
+            counter.innerText = Math.ceil(count);
+            setTimeout(updateCount, stepTime);
+        } else {
+            counter.innerText = target;
+        }
+    };
+
+    updateCount();
+};
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            startCounting(entry.target);
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.5 });
+
+counters.forEach(counter => {
+    observer.observe(counter);
+});
+</script>
+
+<script>
+const tabs = document.querySelectorAll('.tab-item');
+const items = document.querySelectorAll('.menu-item');
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        const filter = tab.getAttribute('data-filter');
+
+        items.forEach(item => {
+            if (item.classList.contains(filter)) {
+                item.style.display = "block";
+            } else {
+                item.style.display = "none";
+            }
+        });
+    });
+});
+</script>
+<script>
+window.addEventListener("scroll", function () {
+    const navbar = document.getElementById("navbar");
+
+    if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
+</script>
+
+
+</body>
+</html>
